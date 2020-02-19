@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Project 1 - Zelda</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WEB.json", {onProgress: UnityProgress});
+    </script>
+  
+  </head>
+  <body>
+
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Project 1 - Zelda</div>
+      </div>
+
+      <br>
+
+      <div class="Readme" style="position: absolute;">
+        
+        <div align="center">
+          <h3>--- ReadMe ---</h3>
+          <h5>Warning: Some tiles flash colors. Mild epilepsy warning</h5>
+        </div>
+
+        <h4>Controls:</h4>
+        <ul style="padding-left: 25px;padding-top: 5px;">
+          <li>"WASD" or Arrow Keys to move</li>
+          <li>Run by holding "Left Shift"</li>
+          <li>A Attack with "Spacebar"</li>
+          <li>B Attack with "Left Ctrl"</li>
+          <li>switch A weapon with numbers "1-2"</li>
+          <li>switch B weapon with "Left Shift" and numbers "1-2"</li>
+          <li>Load Main level with "3"</li>
+          <li>Load Custom level with "4"</li>
+          <li>Enable Godmode by pressing "0"</li>
+        </ul>
+
+        <br>
+
+        <h4>Credits:</h4>
+        <ul style="padding-left: 25px;padding-top: 5px;">
+            <li>Sprite: https://www.spriters-resource.com/nes/legendofzelda/</li>
+            <li>Sprite: https://ya-webdesign.com/</li>
+            <li>Music:  http://vgmpf.com/Wiki/index.php/The_Legend_of_Zelda_(NES)</li>
+            <li>Sounds: https://www.sounds-resource.com/nes/legendofzelda/sound/4590/</li>
+            <li>Sounds: http://noproblo.dayjo.org/ZeldaSounds/</li>
+            <li>Font: The FontStruction “The Legend of Zelda NES” (https://fontstruct.com/fontstructions/show/818869) by “Gwellin” is licensed under a Creative Commons Attribution Non-commercial Share Alike license (http://creativecommons.org/licenses/by-nc-sa/3.0/).</li>
+        </ul>   
+      </div>
+
+  </div>
+  </body>
+
+</html>
